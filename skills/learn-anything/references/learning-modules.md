@@ -1,168 +1,184 @@
-# Adaptive Learning Modules
+# 自适应学习模块
 
-Use these rules for diagnosis, planning, lessons, assessment, transfer, review, and the six named modules.
+在诊断、规划、课程、评估、迁移、复习以及六个指定模块中使用以下规则。
 
-## Shared Mastery Rubric
+## 通用掌握标准
 
-Use qualitative evidence by default:
+默认使用定性证据：
 
-| State | Evidence |
+| 状态 | 证据 |
 |---|---|
-| 尚未掌握 / Not yet mastered | Cannot perform the target task reliably even with basic prompting, or holds a blocking misconception. |
-| 部分掌握 / Partially mastered | Handles familiar examples with support but is inconsistent, incomplete, or fragile under variation. |
-| 稳定掌握 / Stably mastered | Performs representative tasks accurately without material support and can explain key decisions. |
-| 能够迁移 / Transferable | Applies the skill to a meaningfully different real context, justifies adaptations, and detects limitations. |
+| 尚未掌握 | 即使得到基本提示，仍无法可靠完成目标任务，或存在阻碍学习的错误认识。 |
+| 部分掌握 | 在辅助下能处理熟悉的例子，但遇到变化时表现不稳定、不完整或容易出错。 |
+| 稳定掌握 | 无需实质性帮助即可准确完成代表性任务，并能解释关键决策。 |
+| 能够迁移 | 能把能力用于明显不同的真实情境，说明调整理由，并识别局限。 |
 
-Give a numeric score only when the user requests one or an external rubric requires it. A correct answer may show stable recall but does not alone prove transfer.
+只有用户要求或外部评分标准需要时才给数值分数。答对一道题可以证明稳定回忆，但不能单独证明迁移能力。
 
-## Adaptive Diagnosis
+## 自适应诊断
 
-Ask one item at a time and wait for the learner's response.
+每次只问一题，并等待学习者回答。
 
-1. Begin with a short application, explanation, prediction, or worked example near the claimed level.
-2. If the answer is strong, increase difficulty or variation.
-3. If it is weak, test the nearest prerequisite rather than asking another equally difficult question.
-4. Use supplied artifacts, prior work, or observable performance as stronger evidence than self-ratings.
-5. Stop when the highest stable ability and the first limiting gap are identified, or after 7 items—whichever comes first.
+1. 从接近学习者自述水平的简短应用、解释、预测或例题开始。
+2. 回答较好时，提高难度或增加变化。
+3. 回答较弱时，检查最近的前置知识，不要再问一道同等难度的问题。
+4. 学习者提交的作品、过往成果或可观察表现，比自我评分更有证明力。
+5. 确认最高稳定能力和第一个限制性缺口后停止，最多不超过 7 题。
 
-State the inferred starting boundary, evidence, uncertainty, and recommended entry point. Do not diagnose unrelated subdomains.
+说明推断出的起点边界、依据、不确定性和建议入口。不要诊断无关的子领域。
 
-## Lesson Delivery Contract
+## 课程交付约定
 
-Before each lesson, ask the learner to choose:
+每节课开始前，请学习者选择：
 
-- **Interactive:** explain or demonstrate one small unit, prompt the learner, and wait; adapt the next step to the response.
-- **Complete lesson:** provide objectives, concise instruction, examples, guided practice, independent practice, self-check, common errors, and next step in one response.
+- **互动模式：** 讲解或演示一个小单元，向学习者提问，然后等待回答；根据回答调整下一步。
+- **完整课程：** 在一条回复中给出目标、简明讲解、示例、引导练习、独立练习、自测、常见错误和下一步。
 
-Do not assume a previous choice applies to every future lesson. Ask again at the start of each lesson, but if the learner has explicitly set a standing preference, confirm only when context or difficulty changes materially.
+不要假定上一次选择适用于之后每节课。每节课开始时重新询问；如果学习者明确设定了长期偏好，只需在情境或难度发生明显变化时再次确认。
 
-## Module 1: Learning Ladder
+## 模块 1：学习阶梯
 
-Build five levels by default, changing the count only when the domain structure clearly requires it or the user asks. For each level include:
+默认设计以下五个等级：
 
-- level name and role in the journey;
-- prerequisites and target understanding;
-- observable mastery evidence using the four-state rubric;
-- high-leverage concepts or skills;
-- milestone and stopping condition;
-- hands-on practice;
-- real transfer task(s);
-- common errors;
-- short self-check;
-- next review window.
+1. 完全入门：建立必要背景和基本词汇；
+2. 基本理解：理解核心概念及其关系；
+3. 实际应用：在熟悉情境中完成典型任务；
+4. 解决问题：处理变化、故障和开放问题；
+5. 自信实践：独立完成真实任务，并判断方法的局限。
 
-Do not advance because time elapsed or content was viewed. Advance when the level milestone is demonstrated or when the learner knowingly accepts an unresolved gap.
+只有领域结构确有需要或用户提出要求时，才调整等级数量或名称。每个等级包括：
 
-## Module 2: Time-Budgeted Core 20% Plan
+- 等级名称及其在学习过程中的作用；
+- 前置条件和目标理解；
+- 使用四级标准描述的可观察掌握证据；
+- 高杠杆概念或技能；
+- 里程碑和停止条件；
+- 动手练习；
+- 真实迁移任务；
+- 常见错误；
+- 简短自测；
+- 下次复习时间窗口。
 
-Treat “core 20%” as a prioritization heuristic, not a mathematical guarantee. Ask for the actual time budget, cadence, goal, and constraints if missing. A user may choose 20 hours, but never promise mastery within it.
+用通俗、实用的语言解释各级内容，让初学者知道现在该做什么以及如何判断进步。不要因为时间已经过去或内容已经看过就升级。学习者证明达到本级里程碑，或明确接受某个尚未解决的缺口后，再进入下一级。
 
-Identify the smallest set of concepts and skills most likely to unlock the user's target use. Explain both the expected leverage and what the plan omits. Allocate sessions around practice and feedback, not equal content slices. For each session include:
+## 模块 2：按时间预算规划的核心 20% 学习计划
 
-- learning objective;
-- prerequisite or dependency;
-- key concept or skill;
-- practice or mini-project;
-- suitable resource if needed;
-- evidence expected at completion;
-- review or retrieval prompt;
-- adaptation rule if performance is weak or strong.
+把“核心 20%”当作排序启发法，而非数学保证。如果缺少信息，询问实际时间预算、学习节奏、目标和限制。用户可以选择 20 小时，但不得承诺在这段时间内掌握主题。如果用户明确选择 20 小时且没有指定课次，默认安排 10 次、每次 2 小时；其他时间预算按实际条件调整。
 
-End with a goal-aligned project or performance task and explicit success criteria.
+找出最可能帮助用户实现目标用途的最小概念、技能或原则。解释它们为什么重要、如何连接实际用途，也要说明计划舍弃了什么。围绕练习和反馈分配课次，不要机械地平均切分内容。每次学习包括：
 
-## Module 3: Adaptive Quiz
+- 学习目标；
+- 前置条件或依赖；
+- 核心概念或技能；
+- 练习或小项目；
+- 一项合适资源，优先选择免费、容易获取或适合当前水平的材料；如果不需要外部资源，直接说明；
+- 完成时应展示的结果和掌握证据；
+- 默认五道简短的复习或提取练习题；时间较短或用户另有要求时调整数量；
+- 表现较弱或较强时的调整规则。
 
-Ask one question at a time. Unless the user requests a fixed test length, stop when the ability boundary is clear, coverage is adequate for the stated goal, or further questions have low information value.
+最后安排一个符合现实目标的项目或表现任务，并写明成功标准，让学习者能够证明自己会实际使用，而不只是看过内容。
 
-After each answer:
+## 模块 3：自适应测验
 
-1. identify what is correct;
-2. identify the exact gap, error, or uncertainty;
-3. give the four-state mastery judgment for the tested capability;
-4. re-teach only what is needed;
-5. choose the next question adaptively.
+每次只问一题并等待回答。用户没有指定长度时，把 10 题作为上限：前 3 题从基础能力开始，中间题逐步进入综合应用，后几题检验复杂情境或迁移。题目位置只是初始安排，必须根据实际回答调整。能力边界已清楚、覆盖范围足以判断既定目标，或继续提问的信息价值很低时，可以提前停止并说明原因。用户要求固定题数时，完成约定题数，但仍要自适应调整难度和追问。
 
-If the answer is weak, probe or remediate the underlying gap before advancing. If strong, increase difficulty, variation, or transfer demand. At the end, report evidence-backed strengths, gaps, recommended revision, review timing, and optional challenge items. Use numeric grades only if requested.
+每次回答后：
 
-## Module 4: One-Page Cheat Sheet
+1. 指出正确之处；
+2. 指出具体缺口、错误或不确定之处；
+3. 按四级掌握标准评估本题检验的能力；
+4. 只补讲必要内容；
+5. 根据表现选择下一题。
 
-Create a compact, five-minute review artifact tuned to the learner's use case. Include:
+回答较弱时，先用一道追问定位问题，或补救底层缺口，再继续。回答较强时，提高难度、增加变化或加入迁移要求。仅在用户要求数值评分时按 10 分制评分；评分不能替代掌握证据。
 
-- plain-language definition and scope;
-- essential concepts, rules, formulas, or steps;
-- a compact table, flow, diagram, or mental model only when it improves recall;
-- concrete examples;
-- common mistakes and edge cases;
-- a before-use checklist;
-- rapid retrieval questions.
+结束时给出：
 
-Keep uncertainty and context-dependent rules visible. Do not compress away safety constraints or turn disputed claims into settled facts.
+- 有证据支撑的优势和薄弱点；
+- 针对具体缺口的简短复习计划和复习时间；
+- 如果已经完成一次完整测验，给出五道可选挑战题；
+- 用户要求时给出总分，并解释分数对应的能力范围。
 
-## Module 5: Resource Curation
+## 模块 4：一页速查表
 
-Ask what access, format, language, cost, and time constraints matter. Research current resources when freshness or availability matters and follow `research-stage.md` when research triggers are met.
+围绕学习者的使用场景制作一份紧凑、五分钟可复习完的资料。优先使用短句和项目符号，不写可以拆开的长段落。包括：
 
-Recommend only the smallest high-leverage set. For each resource include:
+- 通俗定义和适用范围；
+- 核心概念、规则、公式或步骤；
+- 仅在有助于记忆时使用标注清楚的紧凑表格、流程、图示或心智模型；
+- 默认 3 至 5 个具体、贴近现实用途的示例；
+- 常见错误和边界情况；
+- 使用前检查清单；
+- 默认五道快速提取练习题。
 
-- name, type, creator, and link or identifier;
-- why it fits this learner and goal;
-- exact scope it covers;
-- level and prerequisites;
-- how to use it;
-- limitation, blind spot, or material to skip.
+保留不确定性和依情境而变的规则。不要为了压缩篇幅而删去安全限制，也不要把有争议的主张写成定论。
 
-Order the resources by dependency and use, not popularity. Do not invent availability or treat repeated recommendations as independent quality evidence.
+## 模块 5：学习资源筛选
 
-## Module 6: Feynman Loop
+询问获取条件、格式、语言、费用和时间限制。资源的新鲜度或可用性很重要时，研究当前资源；达到研究触发条件时，遵循 `research-stage.md`。
 
-Run this as an interactive loop unless the user explicitly asks for a demonstration.
+只推荐数量最少但杠杆最高的一组资源。用户没有指定数量时，以五项为上限；少于五项已经足够时，说明不继续凑数的理由。资源可以包括书籍、视频、课程、网站、新闻通讯、社群或值得关注的专业人士。每项资源包括：
 
-1. Give a short, plain-language explanation with a concrete example or analogy.
-2. Ask the learner to explain it back in their own words.
-3. Mark what is accurate and locate every material gap, ambiguity, or misconception.
-4. Re-teach only the missing part.
-5. Ask for a cleaner explanation or a varied application.
-6. Repeat until the target explanation is simple, accurate, complete enough for the goal, and survives one transfer check.
+- 名称、类型、作者或机构，以及链接或标识符；
+- 值得投入时间的原因，以及适合哪类学习者；
+- 所覆盖的准确范围；
+- 难度等级和前置条件；
+- 使用方法；
+- 局限、盲点，以及不值得投入时间或可以跳过的部分。
 
-Stop when the agreed success criterion is met, not when the explanation merely sounds fluent. End with a clean saveable explanation and note any intentionally excluded complexity.
+按依赖关系和最佳使用顺序排列资源，不按热度排序。学习者的时间预算允许且没有要求其他路径时，再用这些资源安排一条简单的七天学习路径；每天写明使用哪项资源、学习什么和完成什么练习。不要虚构资源的可用性，也不要把重复推荐当成独立的质量证据。
 
-## Transfer Tasks
+## 模块 6：费曼学习循环
 
-Assign one real transfer task per ladder level by default. Increase to 2–3 when a level contains multiple distinct abilities or one task cannot sample the important variation. The learner may request transfer testing at any time.
+除非用户明确要求演示，否则以互动循环方式运行。
 
-A transfer task must change at least one meaningful dimension from practice: context, data, constraints, audience, tool, representation, or failure mode. State what successful transfer would demonstrate.
+1. 像耐心的教师一样，用一个 12 岁初学者也能理解的简单词语给出简短解释；如果学习者的年龄、背景或目标需要其他表达方式，就按实际情况调整。把解释控制在学习者当前缺口内，不堆叠额外理论或不必要的术语。
+2. 使用一个现实生活中的例子，并在类比确实有助于理解时加入类比，同时说明类比的局限。
+3. 请学习者用自己的话复述，不要代替学习者完成这一步。
+4. 先指出准确之处，再找出所有实质性缺口、歧义、混淆、遗漏或错误认识。
+5. 温和但明确地纠正问题，只重讲缺失或错误的部分。学习者仍然困惑时，换一个具体例子或表达方式。
+6. 请学习者给出更清楚的解释，或换一个情境应用。
+7. 重复循环，直到解释对目标而言足够简单、准确、完整，并通过一次迁移检查。
 
-Before proposing or initiating a task involving significant time, money, public posting, account changes, physical risk, or other external operations, explain the commitment and ask the user first. Prefer a low-cost simulation when it can test the same ability.
+学习者的解释达到约定标准前，不要进入无关的新内容。保持互动对话，不要把循环变成长篇讲座。达到成功标准时停止，不要只因为表述听起来流畅就结束。最后给出一份可保存的清晰解释，并注明有意省略的复杂内容。
 
-## Dynamic Difficulty
+## 迁移任务
 
-- Two strong performances across different examples: raise variation or reduce scaffolding.
-- One strong performance: verify with a different representation or context before declaring stable mastery.
-- A partial performance: retain level, target the exact gap, then retry with a near variant.
-- A blocking misconception or repeated failure: step down to the nearest prerequisite and shorten the review interval.
-- A successful real transfer: mark “能够迁移” only for the demonstrated scope, not the entire domain.
+默认每个学习阶梯等级安排一个真实迁移任务。如果某一级包含多项不同能力，或一个任务无法覆盖关键变化，则增加到 2 至 3 个。学习者可以随时要求进行迁移测试。
 
-## Stopping Conditions
+迁移任务必须至少改变一个有意义的维度：情境、数据、限制、受众、工具、呈现方式或失败模式。说明成功完成任务可以证明什么。
 
-Stop a lesson or module when one of these applies:
+如果任务涉及大量时间、金钱、公开发布、账户变更、人身风险或其他外部操作，先说明投入和风险，并征得用户同意。能验证同一项能力时，优先使用低成本模拟。
 
-- the agreed objective and evidence criterion are met;
-- the next step depends on user input, external research, consent, or a future review interval;
-- cognitive load or repeated errors indicate that consolidation is more useful than new material;
-- the time budget is reached, with unfinished scope and tradeoffs stated;
-- continued questioning adds little diagnostic value.
+## 动态难度
 
-Never continue solely to complete an arbitrary number of questions, exercises, or levels.
+- 在不同例子中连续两次表现较强：增加变化或减少辅助。
+- 一次表现较强：换一种呈现方式或情境验证后，再判断是否稳定掌握。
+- 部分掌握：保持当前等级，针对具体缺口补强，再用相近变式重试。
+- 存在阻碍性错误认识或反复失败：退回最近的前置知识，并缩短复习间隔。
+- 成功完成真实迁移：仅在已展示的范围内标记“能够迁移”，不要扩大到整个领域。
 
-## Performance-Based Spaced Review
+## 停止条件
 
-Set a review window rather than pretending to know an exact optimal date:
+出现以下任一情况时，停止当前课程或模块：
 
-| Current evidence | Default action and next review |
+- 已达到约定目标和证据标准；
+- 下一步需要用户输入、外部研究、用户同意或等待未来的复习时间；
+- 认知负荷或反复错误表明巩固比学习新内容更有价值；
+- 时间预算已经用完，并已说明未完成范围和取舍；
+- 继续提问几乎不能增加诊断信息。
+
+不要为了凑满任意设定的问题数、练习数或等级数而继续。
+
+## 基于表现的间隔复习
+
+设定复习时间窗口，不要假装能确定唯一的最佳日期：
+
+| 当前证据 | 默认行动和下次复习时间 |
 |---|---|
-| 尚未掌握 | Correct or rebuild the prerequisite in the same session; review again within 1 day. |
-| 部分掌握 | Use targeted retrieval or a near-variant task in 1–2 days. |
-| 稳定掌握 | Use mixed retrieval or a harder variation in 3–7 days. |
-| 能够迁移 | Revisit in 7–14 days or at the next real milestone. |
+| 尚未掌握 | 在同一学习时段纠正错误或重建前置知识；1 天内再次复习。 |
+| 部分掌握 | 在 1 至 2 天后进行针对性提取练习或相近变式任务。 |
+| 稳定掌握 | 在 3 至 7 天后进行混合提取练习或难度更高的变式任务。 |
+| 能够迁移 | 在 7 至 14 天后，或下一个真实里程碑时再次检验。 |
 
-After success, lengthen the next interval and increase variation gradually. After failure, shorten the interval, identify whether the issue is recall, understanding, or transfer, and remediate before retesting. Adjust for deadlines, task frequency, difficulty, and learner preference.
+成功后，逐步延长下一次间隔并增加变化。失败后，缩短间隔，判断问题来自回忆、理解还是迁移，完成补救后再测。根据截止日期、任务频率、难度和学习者偏好进行调整。

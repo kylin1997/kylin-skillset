@@ -1,130 +1,129 @@
 ---
 name: learn-anything
-description: Use only when the user explicitly invokes $learn-anything to research, learn, practice, assess, retain, or resume learning a topic. Supports a complete adaptive learning journey and direct use of a learning ladder, time-budgeted core-20-percent plan, adaptive quiz, one-page cheat sheet, resource curation, Feynman loop, or multi-perspective research.
+description: 仅当用户明确调用 $learn-anything 时使用，帮助用户研究、学习、练习、评估、巩固或继续学习某个主题。支持完整的自适应学习过程，也可直接使用学习阶梯、按时间预算规划的核心 20% 学习计划、自适应测验、一页速查表、资源筛选、费曼学习循环或多视角研究。
 ---
 
-# Learn Anything
+# 学会任何东西
 
-Build an evidence-aware learning path around the learner's goal, current ability, constraints, and demonstrated performance. Favor verified mastery and transfer over speed claims or content volume.
+围绕学习者的目标、当前能力、现实限制和实际表现设计重视证据的学习路径。优先追求经过验证的掌握与迁移能力，不追求夸张的速度或内容数量。
 
-## Invocation Boundary
+## 调用边界
 
-- Run this skill only when the user explicitly writes `$learn-anything`.
-- Do not infer invocation from an ordinary learning question, even if this skill could help.
-- Never promise “10x faster,” “mastery in 20 hours,” or any equivalent outcome. Treat 20 hours only as a user-selected time budget.
+- 仅当用户明确写出 `$learn-anything` 时运行本技能。
+- 普通学习问题即使适合使用本技能，也不要推断用户已调用它。
+- 不得承诺“快 10 倍”“20 小时掌握”或类似结果。只能把 20 小时视为用户选择的时间预算。
 
-## Route the Request
+## 判断请求类型
 
-First decide whether the user wants the full journey or a named capability.
+先判断用户需要完整学习过程，还是某项指定能力。
 
-Direct capabilities include:
+可直接调用的能力包括：
 
-- learning ladder
-- time-budgeted core 20% plan
-- adaptive quiz
-- one-page cheat sheet
-- resource curation
-- Feynman loop
-- multi-perspective research
-- resume from a learning state card
+- 学习阶梯
+- 按时间预算规划的核心 20% 学习计划
+- 自适应测验
+- 一页速查表
+- 学习资源筛选
+- 费曼学习循环
+- 多视角研究
+- 从学习状态卡继续
 
-For a direct capability, bypass unrelated intake and research. Ask only for missing information required to perform that capability. Read `references/learning-modules.md` before running any teaching, planning, assessment, transfer, or review module.
+如果用户直接指定某项能力，跳过无关的信息收集和研究。只询问执行该能力所缺少的必要信息。运行任何教学、规划、评估、迁移或复习模块前，先阅读 `references/learning-modules.md`。
 
-For a full journey, follow the workflow below.
+如果用户需要完整学习过程，按下列流程执行。
 
-## Run the Full Journey
+## 执行完整学习过程
 
-### 1. Restore or Clarify the Goal
+### 1. 恢复或澄清目标
 
-If the user provides or references a learning state card, read `references/state-card.md`, validate the card, restore its state, and ask only about fields that are missing or no longer current.
+如果用户提供或引用了学习状态卡，阅读 `references/state-card.md`，校验状态卡并恢复学习状态，只询问缺失或已过时的字段。
 
-Otherwise, ask once for all still-missing essentials:
+否则，一次性询问仍缺少的必要信息：
 
-- topic and desired scope
-- real-world goal or intended use
-- current background and evidence of it
-- time budget and preferred cadence
-- material, language, access, or other constraints
-- observable success criteria
+- 主题和期望范围
+- 现实目标或用途
+- 当前基础及其证据
+- 时间预算和偏好的学习节奏
+- 学习材料、语言、获取条件或其他限制
+- 可观察的成功标准
 
-Do not repeat questions already answered in the conversation.
+不要重复询问对话中已经回答过的问题。
 
-### 2. Diagnose the Starting Boundary
+### 2. 诊断起点边界
 
-Use evidence supplied by the learner first. If the starting boundary is still unclear, diagnose one question or task at a time.
+优先使用学习者提供的证据。如果起点仍不清楚，每次只给一个诊断问题或任务。
 
-- Start near the learner's claimed level.
-- Adapt the next item to the previous response.
-- Stop as soon as the highest stable ability and first meaningful gap are clear.
-- Ask no more than 7 diagnostic items.
-- Do not turn diagnosis into a fixed exam or assign a numeric score unless requested.
+- 从学习者自述的水平附近开始。
+- 根据上一轮回答调整下一题。
+- 一旦确认最高稳定能力和第一个关键缺口，就停止诊断。
+- 诊断题最多 7 道。
+- 除非用户要求，否则不要把诊断变成固定考试，也不要给数值分数。
 
-Follow the mastery and stopping rules in `references/learning-modules.md`.
+遵循 `references/learning-modules.md` 中的掌握标准和停止条件。
 
-### 3. Decide Whether Research Is Useful
+### 3. 判断研究是否有帮助
 
-Read `references/research-stage.md` and apply its trigger matrix.
+阅读 `references/research-stage.md`，应用其中的触发条件矩阵。
 
-If research is not triggered, say briefly why existing information is enough and continue.
+如果不需要研究，简要说明现有信息为什么已经足够，然后继续。
 
-If research is triggered:
+如果需要研究：
 
-1. Explain the specific trigger in one or two sentences.
-2. Ask the user to choose one research mode:
-   - online search
-   - user-provided materials
-   - prompt for an external agent
-3. Run only the selected mode.
+1. 用一两句话说明具体触发原因。
+2. 请用户选择一种研究方式：
+   - 在线搜索
+   - 用户提供材料
+   - 为外部智能体生成提示词
+3. 只执行用户选择的方式。
 
-Do not treat multiple agents, roles, or sources agreeing as proof. Audit the underlying sources and evidence.
+多个智能体、角色或来源意见一致，并不能证明结论正确。必须审查其底层来源和证据。
 
-### 4. Present the Orientation Before the Plan
+### 4. 先给出领域导览，再制定计划
 
-After research—or immediately when research is unnecessary—produce:
+完成研究后，或确认不需要研究后，依次给出：
 
-1. a concise domain orientation;
-2. a claim-and-evidence map, including important disputes and uncertainty;
-3. a draft learning ladder tied to the user's goal.
+1. 简洁的领域导览；
+2. 主张与证据图谱，其中包括重要争议和不确定性；
+3. 与用户目标对应的学习阶梯草案。
 
-Ask the user to confirm or adjust the scope and ladder. Stop here until the user confirms. Do not generate the detailed learning plan in the same response unless the user explicitly asks to skip confirmation.
+请用户确认或调整范围和学习阶梯，然后停下等待。除非用户明确要求跳过确认，否则不要在同一条回复里生成详细学习计划。
 
-### 5. Build and Run the Learning Plan
+### 5. 制定并执行学习计划
 
-After confirmation, create the detailed plan using `references/learning-modules.md`.
+用户确认后，依据 `references/learning-modules.md` 制定详细计划。
 
-Before every lesson, ask which delivery mode the learner wants:
+每节课开始前，询问学习者希望采用哪种交付方式：
 
-- interactive: proceed one small step at a time and wait after each prompt or exercise;
-- complete lesson: provide the full lesson package in one response.
+- 互动模式：一次推进一个小步骤，每次提问或练习后等待用户回答；
+- 完整课程：在一条回复中给出整节课的全部内容。
 
-Record demonstrated mastery, not mere content exposure. Adjust depth, difficulty, examples, remediation, transfer work, and review timing from the learner's performance.
+记录已经表现出来的掌握程度，不把接触过内容当作掌握。根据学习者的表现调整深度、难度、示例、补救内容、迁移任务和复习时间。
 
-### 6. Close a Session
+### 6. 结束一次学习
 
-At a useful stopping point:
+在合适的停止点：
 
-- summarize demonstrated progress and unresolved gaps;
-- set the next review window from the performance-based spacing rules;
-- give one concrete next action;
-- offer a structured learning state card using `references/state-card.md`;
-- let the user decide whether and where to save it.
+- 总结已经证实的进展和仍未解决的缺口；
+- 根据实际表现设定下次复习时间窗口；
+- 给出一个明确的下一步行动；
+- 根据 `references/state-card.md` 提供结构化学习状态卡；
+- 让用户决定是否保存以及保存到哪里。
 
-Never write or persist a state card without the user's choice.
+未经用户选择，不得写入或持久化学习状态卡。
 
-## Evidence Discipline
+## 证据纪律
 
-Always distinguish these labels when making substantive claims:
+提出重要主张时，始终区分以下标签：
 
-- **Fact:** directly supported by an identifiable source or observation.
-- **Independent source convergence:** multiple genuinely independent sources support the claim; independence must be checked, not assumed.
-- **Inference:** a reasoned conclusion from stated evidence.
-- **Hypothesis:** a plausible but unverified explanation or connection.
+- **事实：** 有可识别的来源或直接观察支持。
+- **独立来源趋同：** 多个真正独立的来源支持该主张；必须核查来源独立性，不能想当然。
+- **推论：** 根据已陈述证据得出的合理结论。
+- **假设：** 合理但尚未验证的解释或联系。
 
-Use “evidence and bias audit,” not simulated peer review. A role's opinion, a panel's consensus, a prestigious persona, or a missing perspective is not evidence. Describe blind spots and hidden connections as hypotheses until evidence supports them.
+使用“证据与偏差审查”，不要模拟同行评审。某个角色的意见、专家组共识、权威人设或缺失的视角都不构成证据。在得到证据支持前，把盲点和隐藏联系标为假设。
 
-## Reference Routing
+## 参考文件读取规则
 
-- Read `references/research-stage.md` only when evaluating or running research.
-- Read `references/learning-modules.md` when diagnosing, planning, teaching, testing, transferring, or scheduling review.
-- Read `references/state-card.md` when resuming state or offering a state card.
-- Read `references/original-prompts.md` only when the user asks to view the source prompts or when maintaining the six module definitions. Do not use the source prompts as higher-priority runtime rules.
+- 仅在判断是否研究或执行研究时阅读 `references/research-stage.md`。
+- 在诊断、规划、教学、测试、迁移或安排复习时阅读 `references/learning-modules.md`。
+- 在恢复学习状态或提供状态卡时阅读 `references/state-card.md`。

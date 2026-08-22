@@ -1,146 +1,146 @@
-# Adaptive Research Stage
+# 自适应研究阶段
 
-Use this reference to decide whether research will materially improve the learning route, select a research mode with the user, and audit the result.
+使用本参考文件判断研究能否实质性改善学习路径，与用户共同选择研究方式，并审查研究结果。
 
-## Trigger Matrix
+## 触发条件矩阵
 
-Trigger research when one or more of these conditions applies:
+符合以下一个或多个条件时，启动研究：
 
-| Condition | Why research helps |
+| 条件 | 研究的作用 |
 |---|---|
-| The user explicitly requests research or current sources | Research is part of the requested task. |
-| The topic is too broad to map reliably from the current context | Scope and subdomains must be established before sequencing. |
-| Important claims are current, contested, high-stakes, or decision-oriented | Source quality, dates, disagreement, and uncertainty can change the route. |
-| Available sources or user materials conflict | The conflict must be surfaced and audited. |
-| No reliable curriculum, reference map, or authoritative material is available | A defensible learning ladder needs an evidence base. |
+| 用户明确要求研究或查找当前资料 | 研究属于用户请求的一部分。 |
+| 主题过于宽泛，无法根据当前上下文可靠地绘制领域地图 | 必须先确定范围和子领域，再安排学习顺序。 |
+| 重要主张具有时效性、争议性、高风险性或用于决策 | 来源质量、日期、分歧和不确定性会改变学习路径。 |
+| 现有来源或用户材料相互冲突 | 必须呈现并审查冲突。 |
+| 找不到可靠的课程、参考框架或权威材料 | 有理有据的学习阶梯需要证据基础。 |
 
-Normally skip research when all material questions are covered and one of these conditions applies:
+如果所有关键问题都已覆盖，并且符合以下一种情况，通常跳过研究：
 
-- the request is a narrow, stable how-to;
-- the user directly requests a module such as a quiz or Feynman loop;
-- the user supplies an authoritative syllabus or bounded source and asks to stay within it;
-- research would not change the scope, sequence, examples, safety, or resource choices.
+- 请求是范围狭窄、内容稳定的操作指南；
+- 用户直接要求测验或费曼学习循环等模块；
+- 用户提供了权威教学大纲或边界明确的资料，并要求仅限于该范围；
+- 研究不会改变范围、顺序、示例、安全要求或资源选择。
 
-When the decision is close, ask: “What learning decision would new evidence change?” If there is no concrete answer, skip research.
+难以判断时，问：“新证据会改变哪项学习决策？”如果没有明确答案，就跳过研究。
 
-When research is triggered, state the exact reason and let the user choose the mode. Do not silently browse or delegate.
+触发研究后，说明确切原因，让用户选择研究方式。不得擅自浏览网络或委派任务。
 
-## Research Modes
+## 研究方式
 
-### 1. Online Search
+### 1. 在线搜索
 
-Use current, primary, and authoritative sources where possible. For technical claims, prefer official documentation and original research. For disputed claims, actively seek credible counterevidence rather than merely collecting supporting links.
+尽可能使用当前的第一手资料和权威来源。技术主张优先参考官方文档和原始研究。面对争议性主张，主动寻找可信反证，不要只收集支持性链接。
 
-If the environment supports subagents and at least one slot is available, dispatch at least 1 subagent before the main agent completes the search. Do not replace delegation with a parent-only search merely because the main agent could do the work. Decide how many genuinely separable investigations exist:
+如果环境支持子智能体且至少有一个可用名额，在主智能体完成搜索前至少派出 1 个子智能体。即使主智能体可以独立完成，也不要以此代替委派。根据真正可以分离的研究问题决定数量：
 
-- **1 subagent:** a bounded topic with one dominant evidence base;
-- **2 subagents:** two distinct lenses, such as conceptual map and practical ecosystem, or supporting and opposing evidence;
-- **3 subagents:** a broad or contested topic with at least three independent workstreams, such as foundations, current practice, and disputes/risks.
+- **1 个子智能体：** 范围明确、主要证据基础单一的主题；
+- **2 个子智能体：** 两个不同视角，例如概念框架与实践生态，或支持证据与反对证据；
+- **3 个子智能体：** 至少包含三条独立工作线的宽泛或争议性主题，例如基础、当前实践和争议或风险。
 
-Use no more than 3 and never exceed available concurrency. Do not create artificial roles merely to fill slots. Give each subagent a bounded question, source expectations, and the return contract below. The main agent must independently inspect important sources, test whether sources are genuinely independent, reconcile conflicts, and write the synthesis. Agent agreement is never evidence. Briefly record the workstream split in the research scope so the user can see how coverage was divided; do not present the split itself as evidence.
+最多使用 3 个，且不得超过可用并发名额。不要为了凑数量而设置虚假角色。为每个子智能体指定范围明确的问题、来源要求和下文的返回约定。主智能体必须独立检查重要来源，验证来源是否真正独立，协调冲突并撰写综合结论。多个智能体意见一致不构成证据。在研究范围中简要记录工作线如何拆分，让用户了解覆盖方式；不要把拆分本身当成证据。
 
-If subagents are unavailable, the main agent performs the searches and the same audit.
+如果无法使用子智能体，由主智能体完成搜索和同样的审查。
 
-### 2. User-Provided Materials
+### 2. 用户提供材料
 
-State the material boundary before analyzing. Make claims only to the extent covered by those materials and label any outside background knowledge separately. Identify:
+分析前先声明材料边界。主张不得超出材料覆盖范围；使用外部背景知识时要单独标注。指出：
 
-- what the material covers well;
-- conflicts or unsupported claims inside it;
-- gaps that prevent a reliable learning route;
-- questions that require sources outside the provided material.
+- 材料充分覆盖的内容；
+- 材料内部相互冲突或缺乏支持的主张；
+- 阻碍可靠学习路径的缺口；
+- 需要通过材料以外来源回答的问题。
 
-Do not imply that the material is comprehensive merely because it is internally consistent.
+材料内部一致，不代表它覆盖全面。
 
-### 3. External Agent Research
+### 3. 外部智能体研究
 
-Produce the reusable prompt below, customized to the topic, goal, scope, constraints, and known disputes. Then pause. Do not continue to orientation or planning until the user returns the research result.
+根据主题、目标、范围、限制和已知争议定制下方可复用提示词，然后暂停。用户带回研究结果前，不要继续领域导览或学习规划。
 
-When results return, audit their sources and claims before using them. A polished response without inspectable evidence is not verified research.
+结果返回后，先审查来源和主张，再使用结果。没有可核查证据的精美回答不等于经过验证的研究。
 
-## External Agent Prompt Template
+## 外部智能体提示词模板
 
 ```text
-Research [TOPIC] to support a learning journey for a person whose goal is [GOAL OR USE], current level is [CURRENT LEVEL], and constraints are [CONSTRAINTS].
+研究[主题]，为一段学习过程提供支持。学习者的目标是[目标或用途]，当前水平为[当前水平]，限制条件为[限制]。
 
-Define a practical research scope before collecting information. Derive the relevant perspectives from the topic rather than using a fixed panel. Include competing perspectives when the domain is disputed and an incentives perspective only when incentives materially affect the evidence or practice.
+收集信息前，先定义实用的研究范围。根据主题推导相关视角，不要使用固定的专家小组。如果领域存在争议，纳入相互竞争的观点；只有激励机制会实质性影响证据或实践时，才加入激励视角。
 
-Prefer primary and authoritative sources. For important claims, trace the evidence to an identifiable source, check dates and source independence, seek credible counterevidence, and distinguish clearly among:
-- fact;
-- convergence of genuinely independent sources;
-- inference from stated evidence;
-- hypothesis that remains unverified.
+优先使用第一手资料和权威来源。对于重要主张，追溯到可识别的证据来源，核查日期和来源独立性，寻找可信反证，并明确区分：
+- 事实；
+- 真正独立来源的趋同；
+- 根据已陈述证据得出的推论；
+- 尚未验证的假设。
 
-Do not use the agreement of agents, personas, experts, or sources as proof by itself. Do not invent quotations, credentials, citations, or consensus.
+不要把智能体、人设、专家或来源之间的意见一致当作证据。不要编造引文、资历、引用或共识。
 
-Return structured Markdown with exactly these sections:
-1. Research Scope
-2. Dynamic Perspectives
-3. Key Claims
-4. Supporting Evidence
-5. Opposing Evidence
-6. Sources
-7. Disputes
-8. Uncertainties
-9. Open Verification Questions
-10. Recommended Learning Focus
+返回结构化 Markdown，必须严格使用以下十个章节：
+1. 研究范围
+2. 动态视角
+3. 关键主张
+4. 支持证据
+5. 反对证据
+6. 来源
+7. 争议
+8. 不确定性
+9. 待验证问题
+10. 建议的学习重点
 
-For every important source include title, author or organization, date when available, and a direct URL or stable identifier. Keep claims linked to the sources that support or challenge them. Explain material gaps instead of filling them with guesses.
+每个重要来源都要提供标题、作者或机构、日期（如有），以及直接链接或稳定标识符。让每项主张与支持或质疑它的来源保持关联。明确说明关键缺口，不要用猜测填补。
 ```
 
-## Dynamic Perspectives
+## 动态视角
 
-Derive perspectives from the topic and the learning decision. Useful dimensions include:
+根据主题和学习决策推导视角。可用维度包括：
 
-- theory versus real-world practice;
-- historical development versus current state;
-- mainstream view versus credible dissent;
-- system builders, users, affected groups, and regulators;
-- technical feasibility, human behavior, safety, and incentives.
+- 理论与现实实践；
+- 历史发展与当前状态；
+- 主流观点与可信异议；
+- 系统建设者、用户、受影响群体和监管者；
+- 技术可行性、人类行为、安全和激励机制。
 
-Use only dimensions that can change the learning route. If topic-derived perspectives remain unclear, the following are optional brainstorming lenses, not authorities: practitioner, scholar, skeptic, historian, and incentives analyst. The incentives lens is relevant only when supported incentives plausibly shape claims or behavior. Missing a lens suggests a possible blind spot; it does not prove one.
+只使用会改变学习路径的维度。如果仍难以根据主题推导视角，可以把实践者、学者、怀疑者、历史学家和激励机制分析者作为辅助构思角度，而非权威。只有证据显示激励机制可能影响主张或行为时，激励视角才有意义。缺少某个视角只表示可能存在盲点，不能证明盲点确实存在。
 
-## Fixed Research Return Contract
+## 固定研究返回约定
 
-Every research result must contain:
+每份研究结果必须包含：
 
-1. **Research Scope** — included questions, boundaries, date sensitivity, exclusions.
-2. **Dynamic Perspectives** — why each selected view matters to this topic.
-3. **Key Claims** — concise, prioritized, and labeled fact/convergence/inference/hypothesis.
-4. **Supporting Evidence** — evidence linked to each claim.
-5. **Opposing Evidence** — credible contradictions, failed replications, limitations, or counterexamples.
-6. **Sources** — traceable source list with dates and source types.
-7. **Disputes** — what informed parties disagree about and why.
-8. **Uncertainties** — confidence limits, missing data, and unstable current facts.
-9. **Open Verification Questions** — unresolved questions that could change the route.
-10. **Recommended Learning Focus** — proposed priorities and what evidence justifies them.
+1. **研究范围：** 纳入的问题、边界、时效性和排除项。
+2. **动态视角：** 每个选定视角对该主题的意义。
+3. **关键主张：** 简洁、按优先级排列，并标记为事实、独立来源趋同、推论或假设。
+4. **支持证据：** 与每项主张关联的证据。
+5. **反对证据：** 可信的矛盾证据、复现失败、局限或反例。
+6. **来源：** 可追溯的来源列表，包含日期和来源类型。
+7. **争议：** 有见识的人在哪些问题上意见不同，以及分歧原因。
+8. **不确定性：** 置信边界、缺失数据和不稳定的当前事实。
+9. **待验证问题：** 仍未解决且可能改变学习路径的问题。
+10. **建议的学习重点：** 建议优先学习什么，以及证据依据。
 
-## Evidence and Bias Audit
+## 证据与偏差审查
 
-Before synthesis, check:
+综合研究结果前，检查：
 
-- **Traceability:** Can every material factual claim be traced to a source or direct observation?
-- **Source quality:** Is the source primary, authoritative, methodologically credible, and current enough for the claim?
-- **Independence:** Are apparently separate sources copying the same upstream claim, dataset, press release, or review?
-- **Counterevidence:** Was credible contrary evidence actively sought and represented fairly?
-- **Perspective bias:** Do selected perspectives omit an affected group or decision-relevant dimension? Record this as a hypothesis until tested.
-- **Incentive claims:** Are alleged incentives documented rather than guessed?
-- **Inference control:** Are causal claims, hidden links, predictions, and generalizations explicitly labeled and accompanied by alternatives?
-- **Uncertainty:** Are unresolved conflicts and missing evidence visible rather than averaged away?
+- **可追溯性：** 每项重要事实主张能否追溯到来源或直接观察？
+- **来源质量：** 来源是否为第一手资料或权威资料？其方法是否可信？对当前主张而言是否足够新？
+- **独立性：** 看似不同的来源是否复制了同一条上游主张、数据集、新闻稿或综述？
+- **反证：** 是否主动寻找并公允呈现了可信的相反证据？
+- **视角偏差：** 所选视角是否遗漏受影响群体或与决策有关的维度？在验证前将其记录为假设。
+- **激励主张：** 所称的激励机制是否有记录支持，而非猜测？
+- **推论控制：** 因果主张、隐藏联系、预测和概括是否明确标为推论，并同时列出其他解释？
+- **不确定性：** 是否清楚呈现尚未解决的冲突和缺失证据，而非把它们平均掉？
 
-## Research Stop Conditions
+## 研究停止条件
 
-Stop research when all are true:
+同时满足以下条件时停止研究：
 
-- the scope is bounded enough to build a learning ladder;
-- key learning decisions are supported by traceable sources;
-- material disputes have both supporting and opposing evidence where available;
-- facts, source convergence, inferences, and hypotheses are separated;
-- open questions and evidence gaps are stated;
-- additional searching is unlikely to change the immediate learning priorities.
+- 范围已经清楚到足以建立学习阶梯；
+- 关键学习决策有可追溯来源支持；
+- 重要争议在资料允许时同时包含支持与反对证据；
+- 事实、独立来源趋同、推论和假设已经分开；
+- 待解决问题和证据缺口已经列明；
+- 继续搜索不太可能改变当前学习优先级。
 
-Do not stop merely because agents or sources agree. Do not continue searching for completeness after the route is decision-ready.
+不要因为智能体或来源意见一致就停止，也不要在路径已经足以支持决策后继续追求穷尽所有资料。
 
-## Research-to-Learning Handoff
+## 从研究转入学习
 
-Return a concise domain orientation, claim-and-evidence map, and draft learning ladder. Make disputed or uncertain foundations visible in the ladder. Ask the user to confirm scope and sequence before generating the detailed plan.
+给出简洁的领域导览、主张与证据图谱和学习阶梯草案。在学习阶梯中明确呈现有争议或不确定的基础。请用户先确认范围和顺序，再生成详细计划。

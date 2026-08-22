@@ -1,75 +1,75 @@
-# Learning State Card
+# 学习状态卡
 
-Use a state card as a portable resume record, not as a second curriculum or a claim of mastery. Offer it at session boundaries and let the user decide whether and where to save it.
+把状态卡作为可携带的续学记录，不要把它变成第二份课程表或未经验证的掌握声明。在一次学习结束时提供状态卡，并让用户决定是否保存以及保存到哪里。
 
-## Resume Procedure
+## 恢复步骤
 
-When a user provides or references a card:
+用户提供或引用状态卡时：
 
-1. Read the card and summarize the restored state in a few lines.
-2. Check whether the goal, constraints, success criteria, sources, or review timing may be stale.
-3. Ask only about required fields that are missing, contradictory, or no longer current.
-4. Do not repeat intake or diagnosis already supported by recorded evidence.
-5. Resume from `Next Action` unless a due review, unresolved misconception, or changed goal should come first.
-6. Treat mastery labels as scoped claims tied to their evidence; verify them if the next task depends on them.
+1. 阅读状态卡，用几行文字概括恢复出的学习状态。
+2. 检查目标、限制、成功标准、来源或复习时间是否可能已经过时。
+3. 只询问缺失、矛盾或已不再适用的必要字段。
+4. 不要重复状态卡证据已经支持的信息收集或诊断。
+5. 从“下一步行动”继续；如果复习已经到期、仍有未解决的错误认识或目标已经改变，则先处理这些事项。
+6. 把掌握标签视为与具体证据绑定、范围有限的主张；如果下一个任务依赖该能力，先验证标签。
 
-If the card is incomplete, continue with what is known and mark uncertainty. Do not reject a useful partial card.
+状态卡不完整时，使用已有信息继续，并标明不确定之处。不要拒绝一张仍有价值的不完整状态卡。
 
-## Structured Markdown Template
+## 结构化 Markdown 模板
 
 ```markdown
-# Learn Anything — Learning State Card
+# 学会任何东西：学习状态卡
 
-## Identity
-- Topic:
-- Scope:
-- Goal / Real-world use:
-- Success criteria:
-- Time budget and cadence:
-- Materials and constraints:
+## 基本信息
+- 主题：
+- 范围：
+- 目标或现实用途：
+- 成功标准：
+- 时间预算和学习节奏：
+- 材料和限制：
 
-## Current Position
-- Current level:
-- Mastery state: 尚未掌握 / 部分掌握 / 稳定掌握 / 能够迁移
-- Mastery evidence:
-- Confidence or uncertainty in this assessment:
+## 当前位置
+- 当前等级：
+- 掌握状态：尚未掌握 / 部分掌握 / 稳定掌握 / 能够迁移
+- 掌握证据：
+- 对当前判断的信心或不确定性：
 
-## Progress
-- Completed modules or lessons:
-- Completed practice tasks:
-- Completed transfer tasks:
-- Artifacts or results:
+## 进展
+- 已完成的模块或课程：
+- 已完成的练习任务：
+- 已完成的迁移任务：
+- 作品或结果：
 
-## Gaps
-- Weak points:
-- Misconceptions:
-- Blocked prerequisites:
+## 缺口
+- 薄弱点：
+- 错误认识：
+- 受阻的前置知识：
 
-## Research Context
-- Research mode: none / online search / user-provided materials / external agent
-- Scope and date:
-- Key sources or provided materials:
-- Important disputes and uncertainty:
+## 研究背景
+- 研究方式：无 / 在线搜索 / 用户提供材料 / 外部智能体
+- 范围和日期：
+- 关键来源或用户材料：
+- 重要争议和不确定性：
 
-## Open Questions
-- Unresolved questions:
-- Claims still needing verification:
+## 待解决问题
+- 尚未解决的问题：
+- 仍需验证的主张：
 
-## Review
-- Last demonstrated performance:
-- Next review window:
-- Review task:
+## 复习
+- 上一次实际表现：
+- 下次复习时间窗口：
+- 复习任务：
 
-## Continuation
-- Next action:
-- Resume instruction: Use $learn-anything, read this state card, validate only stale or missing fields, and continue from the next action without repeating completed intake or diagnosis.
+## 继续学习
+- 下一步行动：
+- 续学指令：使用 $learn-anything，阅读本状态卡，只校验过时或缺失的字段，从下一步行动继续，不要重复已经完成的信息收集或诊断。
 ```
 
-## Update Rules
+## 更新规则
 
-- Record observable evidence, not “covered,” “read,” or “understood” without demonstration.
-- Keep completed work concise; link to artifacts rather than embedding large outputs.
-- Preserve unresolved disputes and uncertainty.
-- Update the review window after each relevant success or failure.
-- Update the resume instruction if the next task requires research, consent, or an external result.
-- Ask the user whether to save the card. If yes, confirm the location or return the Markdown for the user to save.
+- 记录可观察的证据；没有实际表现时，不要只写“已覆盖”“已阅读”或“已理解”。
+- 简洁记录已完成内容；链接到作品，不要嵌入大段成果。
+- 保留尚未解决的争议和不确定性。
+- 每次相关的成功或失败后，更新复习时间窗口。
+- 如果下一项任务需要研究、用户同意或外部结果，更新续学指令。
+- 询问用户是否保存状态卡。用户同意后，确认保存位置，或把 Markdown 返回给用户自行保存。

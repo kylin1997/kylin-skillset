@@ -1,7 +1,7 @@
 interface:
-  display_name: "Learn Anything"
-  short_description: "Research, practice, test, and retain any topic"
-  default_prompt: "Use $learn-anything to help me learn a topic through research, practice, assessment, and review."
+  display_name: "学会任何东西"
+  short_description: "通过研究、练习、测验与复习，建立可验证、能迁移的学习路径"
+  default_prompt: "使用 $learn-anything，通过研究、练习、评估和复习帮助我学习一个主题。"
 
 policy:
   allow_implicit_invocation: false
