@@ -1,0 +1,7 @@
+interface:
+  display_name: "Learn Anything"
+  short_description: "Research, practice, test, and retain any topic"
+  default_prompt: "Use $learn-anything to help me learn a topic through research, practice, assessment, and review."
+
+policy:
+  allow_implicit_invocation: false
